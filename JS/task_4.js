@@ -13,7 +13,7 @@ function lcmm(a1,a2)
    return a1*a2/gcdd(a1,a2);
 }
 let a;
-a=prompt("Enter sequence separated by single spaces");
+a=prompt("Enter the sequence with single spaces between elements");
 a=" "+a;
 let len=a.length;
 let mas = [];
@@ -25,13 +25,13 @@ for(let i=len-1;i>=0&&f==0;i--)
 {
  if(a[i]<'0'&&a[i]>'9'&&a[i]!=' ')
  {
-    console.log("Error");
+    console.log("Incorrect input");
     f=1;
     break;
  }
  if(a[i]==' '&&i<len-1&&a[i+1]==' ')
  {
-   console.log("Incorrect data");
+   console.log("Incorrect input");
    break;
    f=1;
  }
@@ -52,7 +52,7 @@ for(let i=len-1;i>=0&&f==0;i--)
 }
 if(f==1)
 {
-   console.log("Incorrect data");
+   console.log("Incorrect input");
 }
 else
 {

@@ -1,5 +1,5 @@
 let a;
-a=prompt("Enter sequence separated by single spaces");
+a=prompt("Enter the sequence with single spaces between elements");
 a=" "+a;
 console.log(a);
 let len=a.length;
@@ -11,12 +11,12 @@ for(let i=len-1;i>=0&&f==0;i--)
 {
  if((a[i]<'0'||a[i]>'9') && a[i]!=' ')
  {
-    console.log("Incorrect data");
+    console.log("Incorrect input");
     f=1;
  }
  if(a[i]==' '&&i<len-1&&a[i-1]==' ')
  {
-   console.log("Incorrect data");
+   console.log("Incorrect input");
    f=1;
  }
  if(a[i]==' ')
